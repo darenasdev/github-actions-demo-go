@@ -8,6 +8,7 @@ node('golang') {
   stage ('Compile') {
     sh "go build"
     sh "ls -la"
+    sh sleep 300
   }
 
   stage('Sonar Scan'){
